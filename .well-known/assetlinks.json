@@ -1,0 +1,14 @@
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "Khmer education - រៀនភាសាខ្មែរ",
+            "package_name": "com.khmereducation.app",
+            "sha256_cert_fingerprints": [
+                "3D:7B:C7:8B:D0:C2:0F:3A:07:02:C4:4B:C8:17:61:6B:DA:C0:3E:70:6D:5B:74:76:67:DA:09:6C:6C:12:ED:A4"
+            ]
+        }
+    }
+]
