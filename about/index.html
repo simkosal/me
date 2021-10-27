@@ -2,6 +2,19 @@
 <html>
 <head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+  function myFunction() {
+      if(navigator.userAgent.toLowerCase().indexOf("iphone") > -1){ window.location.href = 'https://apps.apple.com/kh/app/my-destiny-by-master-naly/id884500810'; }
+  
+      if(navigator.userAgent.toLowerCase().indexOf("android") > -1){ window.location.href = 'https://play.google.com/store/apps/details?id=com.ecoinsoft.mydestiny&hl=en_us'; }
+  
+      //Update #2
+      if (!navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|IEMobile)/)) {
+          //  window.location.href = 'http://simkosal-personal-infor.herokuapp.com/about/'; //Desktop Browser
+          alert("Web application, Not found Mobile");
+      }
+  }
+  </script>
 <style>
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -53,9 +66,23 @@ button:hover, a:hover {
     <a href="https://www.facebook.com/sim.kosal096"><i class="fa fa-facebook"></i></a>
     <a href="https://twitter.com/kosal_sim"><i class="fa fa-twitter"></i></a>  
     <a href="https://twitter.com/kosal_sim"><i class="fa fa-linkedin"></i></a>  
+    <button onclick="myFunction()">Click me</button>
   </div>
   <a href="tel:087573037"><p><button>Contact</button></p></a>
 </div>
+
+<script>
+ if(navigator.userAgent.toLowerCase().indexOf("iphone") > -1){ window.location.href = 'https://apps.apple.com/kh/app/my-destiny-by-master-naly/id884500810'; }
+  
+  if(navigator.userAgent.toLowerCase().indexOf("android") > -1){ window.location.href = 'https://play.google.com/store/apps/details?id=com.ecoinsoft.mydestiny&hl=en_us'; }
+
+  //Update #2
+  if (!navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|IEMobile)/)) {
+      //  window.location.href = 'http://simkosal-personal-infor.herokuapp.com/about/'; //Desktop Browser
+      alert("Web application, Could not open PlayStore or AppStore");
+  }
+  </script>
+
 
 </body>
 </html>
