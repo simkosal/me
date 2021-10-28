@@ -955,16 +955,30 @@
     <script src="js/main.js"></script>
     <!-- CHECK FOR DIRECT TO PLAYSTORE OR APPSTORE -->
     <script>
-        if(navigator.userAgent.toLowerCase().indexOf("iphone") > -1){ window.location.href = 'https://apps.apple.com/kh/app/my-destiny-by-master-naly/id884500810'; }
-         
-         if(navigator.userAgent.toLowerCase().indexOf("android") > -1){ window.location.href = 'https://play.google.com/store/apps/details?id=com.ecoinsoft.mydestiny&hl=en_us'; }
+        // IPHONE 
+        if(navigator.userAgent.toLowerCase().indexOf("iphone") > -1){ 
+            if(window.location.href != "https://simkosal-personal-infor.herokuapp.com/" && window.location.href != "https://simkosal-personal-infor.herokuapp.com"){
+                window.location.href = 'https://apps.apple.com/kh/app/my-destiny-by-master-naly/id884500810';
+            }
+            //alert(window.location.href);
+    
+        }
+         // ANDROID 
+         if(navigator.userAgent.toLowerCase().indexOf("android") > -1){ 
+            if(window.location.href != "https://simkosal-personal-infor.herokuapp.com/" && window.location.href != "https://simkosal-personal-infor.herokuapp.com"){
+                window.location.href = 'https://play.google.com/store/apps/details?id=com.ecoinsoft.mydestiny&hl=en_us'; 
+            }    
+        }
        
-         //Update #2
-         if (!navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|IEMobile)/)) {
-             //  window.location.href = 'http://simkosal-personal-infor.herokuapp.com/about/'; //Desktop Browser
-             alert("Web application, Could not open PlayStore or AppStore");
-         }
-         </script>
+         // Web App
+        //  if (!navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|IEMobile)/)) {
+        //       window.location.href = 'http://simkosal-personal-infor.herokuapp.com/about/'; //Desktop Browser
+        //      alert("Web application, Could not open PlayStore or AppStore");
+        //     if(window.location.href != "file:///Users/mac2/Documents/Resourse/k2/personal/Profile-Information/index.html"){
+        //         alert("Web application, Could not open PlayStore or AppStore");
+        //     }
+        //  }
+    </script>
 
 </body>
 
