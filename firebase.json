@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "simkosal-me",
+    "public": "y",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
