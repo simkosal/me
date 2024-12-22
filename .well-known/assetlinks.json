@@ -5,7 +5,7 @@
         ],
         "target": {
             "namespace": "android_app",
-            "package_name": "com.ecoinsoft.mydestiny",
+            "package_name": "com.speedytech.app",
             "sha256_cert_fingerprints": [
                 "36:5C:45:80:3F:D8:9E:DE:F5:4A:07:98:31:DE:76:AF:5C:9C:22:27:D4:7F:7A:DB:79:AD:EA:A7:A4:9A:9A:BD",
                 "EE:87:BA:64:E6:58:18:37:43:C5:05:04:85:8A:2E:BD:E6:19:11:88:5F:1F:A4:C0:DA:C5:B0:50:E7:63:E5:6E",
@@ -14,3 +14,4 @@
         }
     }
 ]
+
